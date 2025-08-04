@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자</title>
+    <style>
+        #sel {
+            background-color: red;
+            font-style: italic;
+        }
+        .sel {
+            background-color: blue;
+            color: #fff;
+        }
+        div {
+            background-color: yellow;
+        }
+        /* div div {
+            background-color: #000;
+            color: #fff;
+        } div 한칸 띄우고 div는 div안에있는 상자 선택하는것 */
+        /* div div:last-child {
+            background-color: orange;
+        } */
+        div div:nth-child(1) {
+            background-color: aqua;
+        }
+        .res:hover {
+            background-color: blueviolet;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!--아이디 선택자 #sel -->
+    <div id="sel">아이디 선택자</div>
+    <!--클래스 선택자 .sel-->   
+    <div class="sel">클래스 선택자</div>
+    <!--html 태그 선택자-->   
+    <div>태그 선택자</div> 
+    <!--후손 선택자-->
+    <!-- <div>
+        부모
+        <div>자식</div>
+    </div>     -->
+    <!-- 자손 선택자 -->
+     <div>
+        부모
+        <div>자식1</div>
+        <div>자식2</div>
+     </div>
+     <!-- 반응 선택자 -->
+     <div class="res">
+        반응 선택자
+     </div>
+</body>
+</html>

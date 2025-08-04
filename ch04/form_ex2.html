@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력 양식 예제2</title>
+</head>
+<body>
+    <form method="post" enctype="multipart/form-data" action="처리할 프로그램">
+        <!-- 라디오버튼 : 권한 - 임원,직원,협력회사 이름을 하나로 제ㅓㅇ
+        체크박스 : 이름 여러 개로제어 -->
+        <input type="radio" name="auth" value="A"> 임원
+        <input type="radio" name="auth" value="B" checked> 직원
+        <input type="radio" name="auth" value="C"> 협력회사
+        <br><br>
+        <input type="checkbox" name="climb" value="3"> 등산
+        <input type="checkbox" name="fish" value="2" checked> 낚시
+        <input type="checkbox" name="golf" value="1" checked disabled> 골프
+        <br><br>
+        <!-- button, input type="submit": 차이 -->
+        <button>우편번호검색</button> <!--click -->
+        <input type="submit" value="회원가입">
+        <input type="hidden" value="양정인력개발센터">
+        <select name="area">
+            <option value="서울">서울특별시</option>
+             <option value="부산">부산광역시</option>
+              <option value="대구">대구</option>
+        </select>
+        <select name="area" multiple>
+            <option value="서울">서울특별시</option>
+             <option value="부산">부산광역시</option>
+              <option value="대구">대구</option>
+        </select>
+    </form>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력 양식 예제</title>
+</head>
+<body>
+   <!-- 입력, 수정 동작을 하기 위해서는  -->
+    <!-- 1. method : get(검색:속도빠름), 
+    post(사용자정보 :숨김, 속도가 느림)
+    action : -> 어디로 보내서 처리할까? 프로그램 파일 이름
+    <form method="" action="login.java" enctype="multipart/form-data"></form>
+     -->
+    <h2>회원가입 프로그램</h2>
+    <form method="post" enctype="multipart/form-data">
+        <label>* Userid</label>
+        <input type="text" name="userid" placeholder="아이디를 입력하세요." required> <button>아이디 확인</button>
+        <p>아이디는 8~12자리 미만 영어대소문자 숫자를 포함하세요.</p>
+        <label>* 비밀번호</label>
+        <input type="password" name="passwd"><br>
+        <label>* 비밀번호 확인</label>
+        <input type="password" name="repasswd"><br>
+        <label>* 이름</label>
+        <input type="text" name="username" placeholder="회원이름을 입력하세요."required><br>
+        <label>이메일</label>
+        <input type="text" name="email"><br>
+        <label>거주지역</label>
+        <select name="area">
+            <option>지역을 선택하세요</option>
+            <option value="서울">서울특별시</option>
+            <option value="부산">부산광역시</option>
+            <option value="인천">인천광역시</option>
+            <option value="대구">대구광역시</option>
+            <option value="대전">대전광역시</option>
+            <option value="광주">광주광역시</option>
+            <option value="울산">울산광역시</option>
+        </select><br>
+        <label>휴대전화</label>
+        <select name="tel1">
+            <option value="010">010</option>
+            <option value="011">011</option>
+            <option value="018">018</option>
+            <option value="019">019</option>
+        </select> - <input type="text" name="tel2" maxlength="4" size="4">
+         - <input type="text" name="tel3" maxlength="4" size="4"><br>
+        <!-- 두 개중 하나를 선택하는 라디오 버튼은 이름이 똑같아야 한다. -->
+        
+        <input type="radio" name="gender"checked> 남자
+        <input type="radio" name="gender"> 여자
+        <br>
+        <label>(단일)첨부파일</label>
+        <input type="file" name="file"><br>
+        <label>(다중)첨부파일</label>
+        <input type="file" name="files" multiple><br>
+        <label>자기소개 작성하기</label>
+        <textarea name="intro"></textarea><br>
+
+        <input type="submit" value="회원가입"> 
+        <input type="reset" value="다시작성">
+        
+
+    </form>
+</body>
+</html>

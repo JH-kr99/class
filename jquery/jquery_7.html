@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 제어하기</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+
+<style>
+    *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    .changeBtn {
+        background-color: orangered;
+        color: #fff;
+        border: 0;
+        padding: 10px 20px;
+        font-size: 1.25rem;
+        cursor: pointer;
+    }
+    .changeBtn:hover {
+        background-color: rgb(128, 61, 61);
+        transition: 0.4s;
+    }
+    #img1 {
+       width: 400px;
+       height: auto;
+        
+    }
+</style>
+<body>
+    <img id="img1" src="../images/f.jpg" alt="음식" title="음식 이미지"><br>
+    <button id="changeBtn" class="changeBtn">이미지 변경하기</button>
+
+    <script>
+        $("#changeBtn").click(function(){
+            $("#img1").attr({
+                "src" : "../images/h.jpg",
+                "alt" : "집",
+                "title" : "집 이미지"
+            });
+        });
+    </script>
+</body>
+</html>

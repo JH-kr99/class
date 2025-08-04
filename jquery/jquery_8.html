@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 확대 축소</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <style>
+        .zoomimg {
+            width: 200px;
+            transition: width .3s easy;
+        }
+    </style>
+</head>
+<body>
+    <img src="../images/f.jpg" alt="음식" id="zoomimg" class="zoomimg">
+
+    <script>
+        $("#zoomimg").hover(function(){
+            $(this).css({
+                "width" : "400px"
+            })
+        }, function(){
+            $(this).css({
+                "width" : "200px"
+            })
+        });
+    </script>
+</body>
+</html>

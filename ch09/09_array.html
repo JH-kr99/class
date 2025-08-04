@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트로 배열 다루기 + 반복문</title>
+</head>
+<body>
+    <script>
+        //사과, 바나나, 배 저장하는 배열 
+        let fruits = ["사과", "바나나", "배"];
+        console.log("0번 배열 : " + fruits[0]);
+        console.log(`1번 배열 : ${fruits[1]}`);
+
+        //복숭아 추가 : 맨 끝 -> push()
+        //제거 -> pop()
+        fruits.push("복숭아")
+        console.log(fruits);
+
+        fruits.pop();
+        console.log(fruits);//듀ㅟ에있는 복숭아 지움
+
+        //앞에 삭제, 추가
+        //shift(값), unshift();
+        let numbers = [1,2,3];
+        numbers.unshift(0);
+        console.log(numbers);
+
+        numbers.shift();
+        console.log(numbers);
+        //반복문으로 출력
+        //forEach()를 이용해서 출력
+        fruits.forEach(
+            (f, idx) => { console.log(console.log(`${idx}번 : ${f}`));}
+        );
+        console.log("--------------------------------");
+        /*배열명.forEach(
+            (별명.idx) => {console.log();}
+        );*/
+
+        numbers.forEach(
+            (num, idx) => {console.log(`배열번호 ${idx} : ${num}`);}
+        );
+    </script>
+</body>
+</html>

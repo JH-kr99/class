@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 예제1</title>
+    <style>
+        .wrap1 {
+            display: flex;
+            justify-content: space-between;
+            /*gallery*/
+        }
+
+        .wrap2 {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .wrap3 {
+            display: flex;
+            gap: 50px;
+        }
+        .wrap4 {
+            background-color: #ccc;
+            height: 200px;
+            display: flex;
+            align-items: center;/* 박스 높이값 보다 큰 값이 있어야*/
+        }
+        .wrap5 {
+            display: flex;
+            gap: 10px;
+        }
+
+        .box1 {
+            width: 500px;
+            height: 100px;
+            background-color: red;
+            color: #fff;
+        }
+
+        .box3 {
+            width: 500px;
+            height: 100px;
+            background-color: red;
+            color: #fff;
+        }
+        .bx1 {
+            flex: 1;
+        }
+        .bx2 {
+            flex: 2;
+        }
+        .bx3 {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>예제 1</h3>
+    <div class="wrap1">
+        <div class="box1">box1</div>
+        <div class="box1">box2</div>
+        <div class="box1">box3</div>
+    </div>
+    <br><br>
+    <h3>예제 2</h3>
+    <div class="wrap2">
+        <div class="box1">box1</div>
+        <div class="box1">box2</div>
+        <div class="box1">box3</div>
+    </div>
+    <br><br>
+    <h3>예제 3</h3>
+    <div class="wrap3">
+        <div class="box3">box1</div>
+        <div class="box3">box2</div>
+        <div class="box3">box3</div>
+    </div>
+    <br><br>
+    <h3>예제 4</h3>
+    <div class="wrap4">
+        <div class="box3">box1</div>
+    </div>
+    <br><br>
+    <h3>예제 5</h3>
+    <div class="wrap5">
+        <div class="box3 bx1">box1</div>
+        <div class="box3 bx2">box2</div>
+        <div class="box3 bx3">box3</div>
+    </div>
+</body>
+
+</html>

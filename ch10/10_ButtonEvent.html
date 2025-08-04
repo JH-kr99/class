@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <button class="버튼2">버튼2</button>
+    <button class="버튼3">버튼3</button>
+
+    <script>
+        
+
+        let btn2 = document.querySelector(".btn02");
+        let btn3 = document.querySelector(".btn03");
+
+        btn2.onclick = function () {
+            document.body.style.backgroundColor = "blue";
+        };
+        
+
+        btn3.addEventListener('click', function() {
+            document.body.style.backgroundColor = "red";
+        } );
+        
+    </script>
+</body>
+</html>

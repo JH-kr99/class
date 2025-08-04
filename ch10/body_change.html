@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경색 바꾸기(배열사용)</title>
+</head>
+<body>
+    <button onclick="changeBg()">배경색 바꾸기</button>
+    <button onclick="arrChangeBg()">배열을 이용한 배경색 바꾸기</button>
+
+    <script>
+        
+        let colors = ["lightblue", "lightgreen", "black", "lavender", "lightpink"];
+        let index = 0;
+
+        function arrChangeBg() {
+            document.body.style.backgroundColor = colors[index];
+
+            index++
+
+            if(colors.length <= index) {
+                index = 0;
+            }
+        }
+        function changeBg() {
+            document.body.style.backgroundColor = "black";
+        }
+    </script>
+</body>
+</html>

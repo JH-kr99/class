@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //현재시간
+        let now = new Date();
+        console.log("현재 시간 : " + now.toString());
+
+        let year = now.getFullYear();
+        console.log("현재 연도 : " + year);
+
+        //월 +1
+        let month = now.getMonth() + 1;
+        console.log(month);
+
+        let day = now.getDate();
+        console.log(day);
+
+        // + 글자를 연결하는 옛날 방식
+        
+        console.log("오늘 날짜는 "+year+"년 "+month+"월 "+day+"일");
+
+        //따옴표 대신에 백틱 사용 > ${변수명}
+        console.log(`오늘 날짜는 ${year}년 ${month}월 ${day}일`)
+    </script>
+</body>
+</html>

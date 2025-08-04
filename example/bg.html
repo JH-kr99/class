@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경이미지(히어로 이미지) 활용하기</title>
+    <style>
+        .hero-img {
+            background-image: url(./people.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 600px;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-box {
+            background-color: rgba(225, 255, 255, 0.7);
+            padding: 20px 40px;
+            border-radius: 5px;
+        }
+        .hero h2 {
+            font-size: 60px;
+        }
+        main section {
+            padding: 100px 0;
+        }
+        main section:nth-child(even) {
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>로고&메뉴&유틸리티메뉴</nav>
+        <div class="hero-img">
+            <div class="hero-box">
+                <div class="hero">
+                    <h2>대한민국 IT의 중심 부산광역시</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>Popular Dishes</h2>
+        </section>
+        <section>
+            <h2>Hamburher</h2>
+        </section>
+        <section>
+            <h2>Pizza</h2>
+        </section>
+        <section>
+            <h2>Pasta</h2>
+        </section>
+    </main>
+</body>
+</html>

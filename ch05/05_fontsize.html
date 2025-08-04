@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html { /*페이지 전체 기준 */
+            font-size: 16px;
+        }
+        .rem_ex {
+            font-size: 1.5rem;  /*24/16 = 1.5rem */
+        }
+        .rem_ex p {
+            font-size: 2rem;
+        }
+        body {
+            font-size: 20px;
+        }
+        .em_example {
+            font-size: 1.5em;
+        }
+        .em_example span {
+            font-size: 0.6em;
+        }
+    </style>
+</head>
+<body>
+    <!-- em : 부모 요소의 크기를 기준
+    rem : html 태그를 기준 -->
+    <div class="rem_ex">
+        rem 예제
+        <p>양정인력개발센터</p>
+    </div>
+
+    <div class="em_example">
+        em 예제입니다.
+        <span>부산광역시입니다.</span>
+    </div>
+</body>
+</html>
